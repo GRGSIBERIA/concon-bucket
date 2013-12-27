@@ -215,3 +215,4 @@ pip-log.txt
 .mr.developer.cfg
 
 dynamo.conf
+config/aws.yml
