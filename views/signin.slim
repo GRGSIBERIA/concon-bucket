@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title ConCon Bucket - ログイン
+    meta charset="utf-8"
+
+  body
+    h1 ログイン
+
+    form action="./authenticate_user" method="post"
+      p
+        | ユーザID
+        br
+        input type="text" name="user_id" value=""
+
+      p
+        | パスワード
+        br
+        input type="password" name="password" value=""
+
+      p
+        input type="submit" value="ログイン"

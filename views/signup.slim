@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title ConCon Bucket - ユーザ登録
+    meta charset="utf-8"
+
+  body
+    h1 ユーザ登録
+
+    form action="./signup_procedure" method="post"
+      p
+        | ユーザID
+        br
+        input type="text" name="user_id" value=""
+
+      p
+        | パスワード
+        br
+        input type="password" name="password" value=""
+
+      p
+        input type="submit" value="登録"
