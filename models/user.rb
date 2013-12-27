@@ -2,10 +2,8 @@
 require './models/model_base.rb'
 
 class User < ModelBase
-
-  def initialize
-    super(:user_id,
-      [
+  @attributes = [
+        :user_id,
         :user_name,
         :twitter_id,
         :home_page,
@@ -13,7 +11,13 @@ class User < ModelBase
         :joined_on,
         :mail_address,
         :profile
-      ])
+      ]
+
+  def initialize
+    super(@attributes)
   end
   
+  def initialize(item_hash)
+    super(@attributes, item_hash)
+  end
 end
