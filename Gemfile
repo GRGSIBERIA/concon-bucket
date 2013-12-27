@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'bundler'
 gem 'sinatra'
 gem 'aws-sdk'
-gem 'dynamoid'
+gem 'slim'
+gem 'sinatra-contrib'
